@@ -31,6 +31,18 @@ image::figurer/annenbygning_minstehoyde.png[link=figurer/annenbygning_minstehoyd
 ==== Føringer
 [cols="h,2"]
 |===
+|FKB-A
+|Påkrevd registrering
+ 
+|FKB-B
+|Påkrevd registrering
+ 
+|FKB-C
+|Påkrevd registrering
+ 
+|FKB-D
+|Påkrevd registrering
+ 
 |FKB grunnrissreferanse
 |Se avgrensningsobjekttyper
  
@@ -48,18 +60,6 @@ image::figurer/annenbygning_minstehoyde.png[link=figurer/annenbygning_minstehoyd
  
 |FKB-D minstestørrelse
 |Areal > 3m2 og høyde > 2m
- 
-|FKB-A
-|Påkrevd registrering
- 
-|FKB-B
-|Påkrevd registrering
- 
-|FKB-C
-|Påkrevd registrering
- 
-|FKB-D
-|Påkrevd registrering
  
 |===
  
@@ -173,12 +173,6 @@ Bygning registreres med delt flategeometri.
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Se avgrensningsobjekttyper
- 
-|FKB høydereferanse
-|Se avgrensningsobjekttyper
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -190,6 +184,12 @@ Bygning registreres med delt flategeometri.
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Se avgrensningsobjekttyper
+ 
+|FKB høydereferanse
+|Se avgrensningsobjekttyper
  
 |===
  
@@ -339,6 +339,11 @@ Takkant kan v&#230;re sammenfallende med TakoverbyggKant, Veranda, TrappBygg, L&
  
  
 '''
+.Illustrasjon på registrering av konstruksjon med oval bygningsform. Rød strek er objekttype Takkant, og blå er objekttype Hjelpelinje3d
+image::figurer/Oval_Bygning1.png[link=figurer/Oval_Bygning1.png, Alt="Illustrasjon på registrering av konstruksjon med oval bygningsform. Rød strek er objekttype Takkant, og blå er objekttype Hjelpelinje3d"]
+ 
+ 
+'''
 .Eksempel på registrering av takkant (takkant i rødt og taksprang i blått).  
 image::figurer/takkant_nodepunkt.png[link=figurer/takkant_nodepunkt.png, Alt="Eksempel på registrering av takkant (takkant i rødt og taksprang i blått).  "]
  
@@ -363,22 +368,11 @@ image::figurer/takkant_takflate.png[link=figurer/takkant_takflate.png, Alt="Ekse
 image::figurer/takkant_taksprang_nodepunkt.png[link=figurer/takkant_taksprang_nodepunkt.png, Alt="Eksempel på registrering av takkant for bygning med flatt tak (Takkant er tegnet i rødt, Taksprang er tegnet i blått). Det skal lages 2D nodepunkt i takkant som går over taksprang.  "]
  
  
-'''
-.Illustrasjon på registrering av konstruksjon med oval bygningsform. Rød strek er objekttype Takkant, og blå er objekttype Hjelpelinje3d
-image::figurer/Oval_Bygning1.png[link=figurer/Oval_Bygning1.png, Alt="Illustrasjon på registrering av konstruksjon med oval bygningsform. Rød strek er objekttype Takkant, og blå er objekttype Hjelpelinje3d"]
- 
- 
  
 [discrete]
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterst på tak/takrenne/vindskie
- 
-|FKB høydereferanse
-|Takplanet
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -390,6 +384,12 @@ image::figurer/Oval_Bygning1.png[link=figurer/Oval_Bygning1.png, Alt="Illustrasj
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Ytterst på tak/takrenne/vindskie
+ 
+|FKB høydereferanse
+|Takplanet
  
 |===
  
@@ -542,12 +542,6 @@ image::figurer/fasadeliv_takkant_grunnmur.png[link=figurer/fasadeliv_takkant_gru
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Grunnrissreferanse er hovedfasade/hovedbygg
- 
-|FKB høydereferanse
-|Høydereferanse er fot eller topp fasadeliv. HREF benyttes for å angi   høydereferanse.
- 
 |FKB-A
 |Opsjonell registrering
  
@@ -559,6 +553,12 @@ image::figurer/fasadeliv_takkant_grunnmur.png[link=figurer/fasadeliv_takkant_gru
  
 |FKB-D
 |Opsjonell registrering
+ 
+|FKB grunnrissreferanse
+|Grunnrissreferanse er hovedfasade/hovedbygg
+ 
+|FKB høydereferanse
+|Høydereferanse er fot eller topp fasadeliv. HREF benyttes for å angi   høydereferanse.
  
 |===
  
@@ -692,7 +692,7 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figur
  
 [discrete]
 ==== Tilleggsinformasjon for fotogrammetrisk registrering
-Grunnmur skal kun brukes for bygning under oppf&#248;ring. Revede bygg/ruiner skal ikke registreres som grunnmur men kan registreres som Ruin i FKB-BygnAnlegg (opsjonell registrering).
+Grunnmur skal kun brukes for bygning under oppf&#248;ring. Revede bygg/ruiner skal ikke registreres som grunnmur men kan registreres som Ruin i FKB-BygnAnlegg.
 
 Grunnmur kan sammen med Bygningsdelelinje og FiktivBygningsavgrensning danne bygningsavgrensning til AnnenBygning/Bygning. Dersom Takkant finnes, skal denne benyttes til &#229; danne bygningsavgrensning.
 
@@ -710,12 +710,6 @@ image::figurer/grunnmur.png[link=figurer/grunnmur.png, Alt="Grunnmur (se også f
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterkant av grunnmur
- 
-|FKB høydereferanse
-|Topp grunnmur (angis med HREF = topp)
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -727,6 +721,12 @@ image::figurer/grunnmur.png[link=figurer/grunnmur.png, Alt="Grunnmur (se også f
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Ytterkant av grunnmur
+ 
+|FKB høydereferanse
+|Topp grunnmur (angis med HREF = topp)
  
 |===
  
@@ -881,12 +881,6 @@ image::figurer/bygningsdelelinje_eksempel2.png[link=figurer/bygningsdelelinje_ek
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Grunnrissreferanse er linjene den støter til (takkant, eller ev. grunnmur eller fasadeliv).
- 
-|FKB høydereferanse
-|Høyden skal følge hovedtakplanet
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -898,6 +892,12 @@ image::figurer/bygningsdelelinje_eksempel2.png[link=figurer/bygningsdelelinje_ek
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Grunnrissreferanse er linjene den støter til (takkant, eller ev. grunnmur eller fasadeliv).
+ 
+|FKB høydereferanse
+|Høyden skal følge hovedtakplanet
  
 |===
  
@@ -1008,12 +1008,6 @@ image::figurer/fiktivbygningsavgrensning.png[link=figurer/fiktivbygningsavgrensn
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Tilsvarende som objekttypen den er ment å erstatte
- 
-|FKB høydereferanse
-|Tilsvarende som objekttypen den er ment å erstatte
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -1025,6 +1019,12 @@ image::figurer/fiktivbygningsavgrensning.png[link=figurer/fiktivbygningsavgrensn
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Tilsvarende som objekttypen den er ment å erstatte
+ 
+|FKB høydereferanse
+|Tilsvarende som objekttypen den er ment å erstatte
  
 |===
  
@@ -1156,12 +1156,6 @@ Registreres som lukket polygon.
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterkant arkade
- 
-|FKB høydereferanse
-|Tak eller gulv i arkade (bruk HREF). Primært registreres topp
- 
 |FKB-A
 |Opsjonell registrering
  
@@ -1173,6 +1167,12 @@ Registreres som lukket polygon.
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Ytterkant arkade
+ 
+|FKB høydereferanse
+|Tak eller gulv i arkade (bruk HREF). Primært registreres topp
  
 |===
  
@@ -1332,6 +1332,18 @@ image::figurer/bygningslinje_eksempel2.png[link=figurer/bygningslinje_eksempel2.
 ==== Føringer
 [cols="h,2"]
 |===
+|FKB-A
+|Påkrevd registrering
+ 
+|FKB-B
+|Påkrevd registrering
+ 
+|FKB-C
+|Påkrevd registrering
+ 
+|FKB-D
+|Påkrevd registrering
+ 
 |FKB grunnrissreferanse
 |Topp/bunn/ytterkant av knekklinjer (knekkpunkter) i taket
  
@@ -1349,18 +1361,6 @@ image::figurer/bygningslinje_eksempel2.png[link=figurer/bygningslinje_eksempel2.
  
 |FKB-D minstestørrelse
 |Bygningslinje (TRE_D_NIVÅ 2) skal benyttes for å registrere hovedformen på takflater, for eksempel   der mønelinja ikke når ut til takkant (valmet tak). Det registreres ikke oppstikkende objekter   (TRE_D_NIVÅ 3)
- 
-|FKB-A
-|Påkrevd registrering
- 
-|FKB-B
-|Påkrevd registrering
- 
-|FKB-C
-|Påkrevd registrering
- 
-|FKB-D
-|Påkrevd registrering
  
 |===
  
@@ -1507,6 +1507,18 @@ image::figurer/hjelpelinje3d_tredniva.png[link=figurer/hjelpelinje3d_tredniva.pn
 ==== Føringer
 [cols="h,2"]
 |===
+|FKB-A
+|Påkrevd registrering
+ 
+|FKB-B
+|Påkrevd registrering
+ 
+|FKB-C
+|Påkrevd registrering
+ 
+|FKB-D
+|Påkrevd registrering
+ 
 |FKB grunnrissreferanse
 |knekklinje i takoverflaten
  
@@ -1524,18 +1536,6 @@ image::figurer/hjelpelinje3d_tredniva.png[link=figurer/hjelpelinje3d_tredniva.pn
  
 |FKB-D minstestørrelse
 |krav til maksimal pilhøyde 100 cm
- 
-|FKB-A
-|Påkrevd registrering
- 
-|FKB-B
-|Påkrevd registrering
- 
-|FKB-C
-|Påkrevd registrering
- 
-|FKB-D
-|Påkrevd registrering
  
 |===
  
@@ -1676,12 +1676,6 @@ image::figurer/monelinje_eksempel.png[link=figurer/monelinje_eksempel.png, Alt="
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Topp møne ved skrå takflater
- 
-|FKB høydereferanse
-|Topp møne ved skrå takflater
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -1693,6 +1687,12 @@ image::figurer/monelinje_eksempel.png[link=figurer/monelinje_eksempel.png, Alt="
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Topp møne ved skrå takflater
+ 
+|FKB høydereferanse
+|Topp møne ved skrå takflater
  
 |===
  
@@ -1824,12 +1824,6 @@ Registreres som lukket polygon.
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterkant portrom
- 
-|FKB høydereferanse
-|Tak eller gulv i portrom (bruk HREF). Primært registreres topp.
- 
 |FKB-A
 |Opsjonell registrering
  
@@ -1841,6 +1835,12 @@ Registreres som lukket polygon.
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Ytterkant portrom
+ 
+|FKB høydereferanse
+|Tak eller gulv i portrom (bruk HREF). Primært registreres topp.
  
 |===
  
@@ -1971,15 +1971,6 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figur
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Senter TakMur
- 
-|FKB høydereferanse
-|Topp TakMur
- 
-|FKB-A minstestørrelse
-|TakMur med høyde større en 0.5 meter registreres
- 
 |FKB-A
 |Opsjonell registrering
  
@@ -1991,6 +1982,15 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figur
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Senter TakMur
+ 
+|FKB høydereferanse
+|Topp TakMur
+ 
+|FKB-A minstestørrelse
+|TakMur med høyde større en 0.5 meter registreres
  
 |===
  
@@ -2136,18 +2136,6 @@ image::figurer/takplata_eksempel2.png[link=figurer/takplata_eksempel2.png, Alt="
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Omriss i gulvnivå (som ved takterrasse innfelt i hovedtakflate)
- 
-|FKB høydereferanse
-|Høydereferanse er laveste flate. I bygård med lavereliggende tak vil   man registrere på nivå med lavere tak inne i bygård.
- 
-|FKB-A minstestørrelse
-|Takplatå tas med hvis volum er større enn 5 m3
- 
-|FKB-B minstestørrelse
-|Takplatå tas med hvis volum er større enn 15 m3
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -2159,6 +2147,18 @@ image::figurer/takplata_eksempel2.png[link=figurer/takplata_eksempel2.png, Alt="
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Omriss i gulvnivå (som ved takterrasse innfelt i hovedtakflate)
+ 
+|FKB høydereferanse
+|Høydereferanse er laveste flate. I bygård med lavereliggende tak vil   man registrere på nivå med lavere tak inne i bygård.
+ 
+|FKB-A minstestørrelse
+|Takplatå tas med hvis volum er større enn 5 m3
+ 
+|FKB-B minstestørrelse
+|Takplatå tas med hvis volum er større enn 15 m3
  
 |===
  
@@ -2298,12 +2298,6 @@ image::figurer/takplatatopp_eksempel.png[link=figurer/takplatatopp_eksempel.png,
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Topp takrenne eller topp ytterkant tak. Dersom det er registrert en   opphøyet kant på taket (TakMur), skal fremdeles takhøyden   registreres.  
- 
-|FKB høydereferanse
-|Ytterst på tak/takrenne/vindskie
- 
 |FKB-A
 |Opsjonell registrering
  
@@ -2315,6 +2309,12 @@ image::figurer/takplatatopp_eksempel.png[link=figurer/takplatatopp_eksempel.png,
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Topp takrenne eller topp ytterkant tak. Dersom det er registrert en   opphøyet kant på taket (TakMur), skal fremdeles takhøyden   registreres.  
+ 
+|FKB høydereferanse
+|Ytterst på tak/takrenne/vindskie
  
 |===
  
@@ -2459,12 +2459,6 @@ image::figurer/taksprang_eksempel.png[link=figurer/taksprang_eksempel.png, Alt="
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterst på tak/takrenne/vindskie. For flate tak registreres ytterkant   vegg.
- 
-|FKB høydereferanse
-|Takplan
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -2476,6 +2470,12 @@ image::figurer/taksprang_eksempel.png[link=figurer/taksprang_eksempel.png, Alt="
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Ytterst på tak/takrenne/vindskie. For flate tak registreres ytterkant   vegg.
+ 
+|FKB høydereferanse
+|Takplan
  
 |===
  
@@ -2617,12 +2617,6 @@ image::figurer/taksprangbunn_eksempel1.png[link=figurer/taksprangbunn_eksempel1.
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Der øvre takkant blir projisert ned på nedre tak
- 
-|FKB høydereferanse
-|På nedre takplan
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -2634,6 +2628,12 @@ image::figurer/taksprangbunn_eksempel1.png[link=figurer/taksprangbunn_eksempel1.
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Der øvre takkant blir projisert ned på nedre tak
+ 
+|FKB høydereferanse
+|På nedre takplan
  
 |===
  
@@ -2788,12 +2788,6 @@ image::figurer/bygningbru_skisse.png[link=figurer/bygningbru_skisse.png, Alt="Sk
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterkant av bru. Registreres som sammenhengende polygon
- 
-|FKB høydereferanse
-|Gulv
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -2805,6 +2799,12 @@ image::figurer/bygningbru_skisse.png[link=figurer/bygningbru_skisse.png, Alt="Sk
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Ytterkant av bru. Registreres som sammenhengende polygon
+ 
+|FKB høydereferanse
+|Gulv
  
 |===
  
@@ -2938,12 +2938,6 @@ image::figurer/lavebru_skisse.png[link=figurer/lavebru_skisse.png, Alt="Skisse s
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterkant av låvebru
- 
-|FKB høydereferanse
-|Topp låvebrukjørebane, eventuelt bakken ved start låvebru
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -2955,6 +2949,12 @@ image::figurer/lavebru_skisse.png[link=figurer/lavebru_skisse.png, Alt="Skisse s
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Ytterkant av låvebru
+ 
+|FKB høydereferanse
+|Topp låvebrukjørebane, eventuelt bakken ved start låvebru
  
 |===
  
@@ -3093,18 +3093,6 @@ image::figurer/trappbygg_skisse.png[link=figurer/trappbygg_skisse.png, Alt="Skis
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterkant av trapp
- 
-|FKB høydereferanse
-|Topp og fot av trappa (trappas skråplan)
- 
-|FKB-A minstestørrelse
-|Alle synlige trapper
- 
-|FKB-B minstestørrelse
-|Areal > 6m2 (regnet fra takkant)
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -3116,6 +3104,18 @@ image::figurer/trappbygg_skisse.png[link=figurer/trappbygg_skisse.png, Alt="Skis
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Ytterkant av trapp
+ 
+|FKB høydereferanse
+|Topp og fot av trappa (trappas skråplan)
+ 
+|FKB-A minstestørrelse
+|Alle synlige trapper
+ 
+|FKB-B minstestørrelse
+|Areal > 6m2 (regnet fra takkant)
  
 |===
  
@@ -3244,6 +3244,13 @@ Plattinger som ligger p&#229; terreng og som er helt uten rekkverk registreres i
 Veranda kan v&#230;re sammenfallende med Takkant. Takkant og Veranda da registreres da som to frittst&#229;ende objekt. 
 
 Som standard skal h&#248;ydereferanse (HREF) benyttes slik: HREF topp (topp rekkverk) benyttes p&#229; takterrasse, HREF fot (gulvniv&#229;) benyttes p&#229; terrasser p&#229; terreng og det er valgfritt om ..HREF topp eller fot benyttes for veranda p&#229; vegg.
+
+Verandaer som ikke stikker ut fra veggen/takkanten, men er trukket inn i bygget forventes ikke registrert. 
+ 
+ 
+'''
+.Illustrasjon av bygning der verandaene i øverste etasje ikke stikker ut fra takkant/vegg. Verandaene i de tre nederste etasjene stikker ut fra bygget og skal registreres (rød linje)
+image::figurer/inntrukne_verandaer.png[link=figurer/inntrukne_verandaer.png, Alt="Illustrasjon av bygning der verandaene i øverste etasje ikke stikker ut fra takkant/vegg. Verandaene i de tre nederste etasjene stikker ut fra bygget og skal registreres (rød linje)"]
  
  
 '''
@@ -3276,18 +3283,6 @@ image::figurer/veranda_takoverbygg.png[link=figurer/veranda_takoverbygg.png, Alt
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterkant veranda
- 
-|FKB høydereferanse
-|Det skal angis hvilken høydereferanse (HREF) som er benyttet ved   registrering. For verandaer på tak (MEDIUM B) skal   høydereferansen være topp.
- 
-|FKB-A minstestørrelse
-|Veranda med areal større enn 2 m2 (regnet fra takkant)
- 
-|FKB-B minstestørrelse
-|Veranda med areal større enn 6 m2 (regnet fra takkant)
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -3299,6 +3294,18 @@ image::figurer/veranda_takoverbygg.png[link=figurer/veranda_takoverbygg.png, Alt
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Ytterkant veranda
+ 
+|FKB høydereferanse
+|Det skal angis hvilken høydereferanse (HREF) som er benyttet ved   registrering. For verandaer på tak (MEDIUM B) skal   høydereferansen være topp.
+ 
+|FKB-A minstestørrelse
+|Veranda med areal større enn 2 m2 (regnet fra takkant)
+ 
+|FKB-B minstestørrelse
+|Veranda med areal større enn 6 m2 (regnet fra takkant)
  
 |===
  
@@ -3427,6 +3434,8 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figur
 ==== Tilleggsinformasjon for fotogrammetrisk registrering
 Ved registrering av topp vegg skal alle knekklinjer registreres. Dersom det er h&#248;ydesprang st&#248;rre enn 0,5 meter, skal disse registreres som sprang.
 
+VeggFrittst&#229;ende skal kun benyttes n&#229;r veggen st&#229;r inntil takkant og/eller veranda. Vegger som ikke st&#229;r i tilknytning til bygning/veranda registreres som aktuelt objekt i datasettet bygningsmessige anlegg.
+
 Det skal lages nodepunkt til eventuelle tilst&#248;tende situasjonsdetaljer. Avhengig av situasjon dannes nodepunktet i 2D eller 3D. Konnekteres til bygninger og lignende der veggen g&#229;r inn til slike.
  
  
@@ -3440,18 +3449,6 @@ image::figurer/veggfrittstaende_skisse.png[link=figurer/veggfrittstaende_skisse.
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Senter vegg  
- 
-|FKB høydereferanse
-|Topp vegg
- 
-|FKB-A minstestørrelse
-|Høyere enn 1.5 meter og lengre enn 1 meter
- 
-|FKB-B minstestørrelse
-|Høyere enn 1.5 meter og lengre enn 2 meter
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -3463,6 +3460,18 @@ image::figurer/veggfrittstaende_skisse.png[link=figurer/veggfrittstaende_skisse.
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Senter vegg  
+ 
+|FKB høydereferanse
+|Topp vegg
+ 
+|FKB-A minstestørrelse
+|Høyere enn 1.5 meter og lengre enn 1 meter
+ 
+|FKB-B minstestørrelse
+|Høyere enn 1.5 meter og lengre enn 2 meter
  
 |===
  
@@ -3618,18 +3627,6 @@ image::figurer/takoverbygg_skisser.png[link=figurer/takoverbygg_skisser.png, Alt
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Se avgrensningsobjekttyper
- 
-|FKB høydereferanse
-|Se avgrensningsobjekttyper
- 
-|FKB-A minstestørrelse
-|Takoverbygg med areal større enn 3 m2
- 
-|FKB-B minstestørrelse
-|Takoverbygg med areal større enn 6 m2
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -3641,6 +3638,18 @@ image::figurer/takoverbygg_skisser.png[link=figurer/takoverbygg_skisser.png, Alt
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Se avgrensningsobjekttyper
+ 
+|FKB høydereferanse
+|Se avgrensningsobjekttyper
+ 
+|FKB-A minstestørrelse
+|Takoverbygg med areal større enn 3 m2
+ 
+|FKB-B minstestørrelse
+|Takoverbygg med areal større enn 6 m2
  
 |===
  
@@ -3722,12 +3731,12 @@ image::figurer/takoverbygg_skisser.png[link=figurer/takoverbygg_skisser.png, Alt
 '''
  
 [[takoverbyggkant]]
-=== Objekttype: Takoverbyggkant
+=== Objekttype: TakoverbyggKant
 *Definisjon fra FKB produktspesifikasjon*: avgrensing av takoverbygg
  
  
-.Illustrasjon fra produktspesifikasjon av Takoverbyggkant
-image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_takoverbyggkant.png[link=http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_takoverbyggkant.png, Alt="Illustrasjon fra produktspesifikasjon: Takoverbyggkant"]
+.Illustrasjon fra produktspesifikasjon av TakoverbyggKant
+image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_takoverbyggkant.png[link=http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_takoverbyggkant.png, Alt="Illustrasjon fra produktspesifikasjon: TakoverbyggKant"]
  
  
 [discrete]
@@ -3745,12 +3754,6 @@ Takkant og TakoverbyggKant kan v&#230;re sammenfallende. Da registreres to fritt
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterkant tak
- 
-|FKB høydereferanse
-|Topp ytterkant tak
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -3763,13 +3766,19 @@ Takkant og TakoverbyggKant kan v&#230;re sammenfallende. Da registreres to fritt
 |FKB-D
 |Registreres ikke
  
+|FKB grunnrissreferanse
+|Ytterkant tak
+ 
+|FKB høydereferanse
+|Topp ytterkant tak
+ 
 |===
  
  
 <<<
  
 [discrete]
-==== Egenskapstabell for objekttype: Takoverbyggkant
+==== Egenskapstabell for objekttype: TakoverbyggKant
 [cols="20,20,20,10", options="header"]
 |===
 |*Navn:* 
