@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Geovekst">
 <title>Registreringsinstruks: Fotogrammetrisk FKB-Bygning</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -117,7 +117,6 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
-pre>code{display:block}
 pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
@@ -141,7 +140,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -163,6 +162,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -219,6 +219,7 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
+.listingblock pre>code{display:block}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
 .listingblock:hover code[data-lang]::before{display:block}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
@@ -328,7 +329,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -439,7 +440,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1>Registreringsinstruks: Fotogrammetrisk FKB-Bygning</h1>
 <div class="details">
 <span id="author" class="author">Geovekst</span><br>
-<span id="revdate">5.0 - 2024-01-01</span>
+<span id="revdate">5.0 - 2026-01-01</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
@@ -449,27 +450,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_innledning">1.1. Innledning</a></li>
 <li><a href="#_endringslogg">1.2. Endringslogg</a>
 <ul class="sectlevel3">
-<li><a href="#_endringer_fra_versjon_5_0_2023_01_01_til_versjon_5_1_2024_01_01">1.2.1. Endringer fra versjon 5.0 2023-01-01 til versjon 5.1 2024-01-01</a></li>
-<li><a href="#_endringer_fra_versjon_5_0_2022_01_01_til_versjon_5_0_2023_01_01">1.2.2. Endringer fra versjon 5.0 2022-01-01 til versjon 5.0 2023-01-01</a></li>
-<li><a href="#_endringer_fra_versjon_4_61_2018_01_01_til_versjon_5_0_2022_01_01">1.2.3. Endringer fra versjon 4.61 2018-01-01 til versjon 5.0 2022-01-01</a></li>
+<li><a href="#_endringer_fra_versjon_5_0_2024_01_01_til_versjon_5_0_2026_01_01">1.2.1. Endringer fra versjon 5.0 2024-01-01 til versjon 5.0 2026-01-01</a></li>
+<li><a href="#_endringer_fra_versjon_5_0_2023_01_01_til_versjon_5_0_2024_01_01">1.2.2. Endringer fra versjon 5.0 2023-01-01 til versjon 5.0 2024-01-01</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_generelle_retningslinjer_som_gjelder_fotogrammetrisk_registrering_av_fkb">2. Generelle retningslinjer som gjelder fotogrammetrisk registrering av FKB</a>
-<ul class="sectlevel2">
-<li><a href="#_fotogrammetrisk_nykonstruksjon">2.1. Fotogrammetrisk nykonstruksjon</a>
-<ul class="sectlevel3">
-<li><a href="#_registrering_av_nye_kartobjekter">2.1.1. Registrering av nye kartobjekter</a></li>
-<li><a href="#_registrering_av_egenskaper_på_nye_kartobjekter">2.1.2. Registrering av egenskaper på nye kartobjekter</a></li>
-<li><a href="#_egenskaper_på_flater_med_heleid_geometri">2.1.3. Egenskaper på flater med heleid geometri</a></li>
-</ul>
-</li>
-<li><a href="#_fotogrammetrisk_ajourhold">2.2. Fotogrammetrisk ajourhold</a></li>
-<li><a href="#_fotogrammetrisk_oppgradering">2.3. Fotogrammetrisk oppgradering</a></li>
-<li><a href="#_geografisk_avgrensning_av_kartleggingsområder">2.4. Geografisk avgrensning av kartleggingsområder</a></li>
-</ul>
-</li>
+<li><a href="#_generelle_retningslinjer_som_gjelder_fotogrammetrisk_registrering_av_fkb">2. Generelle retningslinjer som gjelder fotogrammetrisk registrering av FKB</a></li>
 <li><a href="#_objekttyper_og_egenskaper">3. Objekttyper og egenskaper</a>
 <ul class="sectlevel2">
 <li><a href="#annenbygning">3.1. Objekttype: AnnenBygning</a></li>
@@ -495,7 +482,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#veranda">3.21. Objekttype: Veranda</a></li>
 <li><a href="#veggfrittstående">3.22. Objekttype: VeggFrittstående</a></li>
 <li><a href="#takoverbygg">3.23. Objekttype: Takoverbygg</a></li>
-<li><a href="#takoverbyggkant">3.24. Objekttype: Takoverbyggkant</a></li>
+<li><a href="#takoverbyggkant">3.24. Objekttype: TakoverbyggKant</a></li>
 </ul>
 </li>
 <li><a href="#_datakvalitet">4. Datakvalitet</a>
@@ -525,10 +512,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p><strong>Publisert</strong>: 2023-12-21<br>
-<strong>Nyeste gyldige versjon av dokumentet finnes på</strong>: <a href="https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2024-01-01" class="bare">https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2024-01-01</a><br>
-<strong>Denne versjonen finnes på</strong>: <a href="https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2024-01-01" class="bare">https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2024-01-01</a><br>
-<strong>Denne versjonen erstatter</strong>: <a href="https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2022-01-01" class="bare">https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2022-01-01</a><br>
+<p><strong>Publisert</strong>: 2025-12-05<br>
+<strong>Nyeste gyldige versjon av dokumentet finnes på</strong>: <a href="https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2026-01-01" class="bare">https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2026-01-01</a><br>
+<strong>Denne versjonen finnes på</strong>: <a href="https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2026-01-01" class="bare">https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2026-01-01</a><br>
+<strong>Denne versjonen erstatter</strong>: <a href="https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2024-01-01" class="bare">https://sosi.geonorge.no/registreringsinstrukser/FKB-Bygning/5.0/Fotogrammetrisk_2024-01-01</a><br>
 <strong>Tilhørende produktspesifikasjon finnes på</strong>: <a href="https://sosi.geonorge.no/produktspesifikasjoner/FKB-Bygning/5.0" class="bare">https://sosi.geonorge.no/produktspesifikasjoner/FKB-Bygning/5.0</a><br>
 - <a href="https://sosi.geonorge.no/uml-modeller/sosi-del-3-produktspesifikasjoner/FKB-Bygning/5.0">HTML-visning av UML-modellen</a><br></p>
 </div>
@@ -560,38 +547,38 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_endringslogg">1.2. Endringslogg</h3>
 <div class="sect3">
-<h4 id="_endringer_fra_versjon_5_0_2023_01_01_til_versjon_5_1_2024_01_01">1.2.1. Endringer fra versjon 5.0 2023-01-01 til versjon 5.1 2024-01-01</h4>
+<h4 id="_endringer_fra_versjon_5_0_2024_01_01_til_versjon_5_0_2026_01_01">1.2.1. Endringer fra versjon 5.0 2024-01-01 til versjon 5.0 2026-01-01</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Endret kvalitetsklasse på høydenøyaktighet for takkant fra 3 til 2</p>
+<p>I kapittel 3.24 Objekttype TakoverbyggKant er rubrikkteksten rettet, slik at TakoverbyggKant skrives med stor K.</p>
 </li>
 <li>
-<p>Lagt inn to illustrasjoner for objekttype Takkant som viser registrering av ovale/runde takformer</p>
+<p>Kapittel 1.2.2 Rettet versjonsnummer.</p>
+</li>
+<li>
+<p>I kapittel 3.5 Objekttype Grunnmur er opsjonell registrering strøket fra teksten om Ruin.</p>
+</li>
+<li>
+<p>I kapittel 3.22 Objekttype VeggFrittstående presiseres det at VeggFrittstående kun skal benyttes når veggen står inntil takkant og/eller veranda.</p>
+</li>
+<li>
+<p>I kapittel 3.21 Objekttype Veranda presiseres det at verandaer som ikke stikker ut fra veggen/takkanten, men er trukket inn i bygget ikke forventes registrert. Det er lagt til en figur som beskriver slike verandaer.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_endringer_fra_versjon_5_0_2022_01_01_til_versjon_5_0_2023_01_01">1.2.2. Endringer fra versjon 5.0 2022-01-01 til versjon 5.0 2023-01-01</h4>
+<h4 id="_endringer_fra_versjon_5_0_2023_01_01_til_versjon_5_0_2024_01_01">1.2.2. Endringer fra versjon 5.0 2023-01-01 til versjon 5.0 2024-01-01</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Presisering av registrering av kvalitet og datafangstdato i kapittel 2.1.1</p>
+<p>Endret kvalitetsklasse på høydenøyaktighet for takkant fra 3 til 2.</p>
 </li>
 <li>
-<p>Presisering av registrering av egenskaper på objekter med heleid flategeometri i kapittel 2.1.3</p>
-</li>
-<li>
-<p>Presisering av at Bygningsdelelinje ikke skal registreres med kvalitet i kapittel 3.6</p>
+<p>Lagt inn to illustrasjoner for objekttype Takkant som viser registrering av ovale/runde takformer.</p>
 </li>
 </ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_endringer_fra_versjon_4_61_2018_01_01_til_versjon_5_0_2022_01_01">1.2.3. Endringer fra versjon 4.61 2018-01-01 til versjon 5.0 2022-01-01</h4>
-<div class="paragraph">
-<p>Se produktspesifikasjon for FKB-Bygning 5.0 for en oversikt over <a href="https://sosi.geonorge.no/produktspesifikasjoner/FKB-Bygning#trueendringer-siden-fkb-bygning-4-61-2017-05-01">endringer siden FKB-Bygning 4.61 2018-01-01</a>. Det er ikke gjort endringer når det gjelder bestemmelser for fotogrammetrisk registrering utover det som følger av endringene i produktspesifikasjonen.</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -601,286 +588,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_generelle_retningslinjer_som_gjelder_fotogrammetrisk_registrering_av_fkb">2. Generelle retningslinjer som gjelder fotogrammetrisk registrering av FKB</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_fotogrammetrisk_nykonstruksjon">2.1. Fotogrammetrisk nykonstruksjon</h3>
 <div class="paragraph">
-<p>Ved fotogrammetrisk nykonstruksjon skal alle objektene som er spesifisert i registreringsinstruksen og som er synlige i flybildene registreres.</p>
-</div>
-<div class="sect3">
-<h4 id="_registrering_av_nye_kartobjekter">2.1.1. Registrering av nye kartobjekter</h4>
-<div class="paragraph">
-<p>Hovedregelen er at påkrevde objekttyper registreres, mens opsjonelle objekttyper ikke registreres.</p>
-</div>
-<div class="paragraph">
-<p>Unntak fra hovedregelen kan avtales i teknisk spesifikasjon for kartleggingsprosjektet.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_registrering_av_egenskaper_på_nye_kartobjekter">2.1.2. Registrering av egenskaper på nye kartobjekter</h4>
-<div class="paragraph">
-<p>Hovedregelen er at obligatoriske egenskaper registreres, mens opsjonelle egenskaper ikke registreres ved fotogrammetrisk datafangst.</p>
-</div>
-<div class="paragraph">
-<p>Egenskaper som skal registreres/klassifiseres ved hjelp av fotogrammetri er beskrevet spesielt i registreringsinstruksen. Opsjonelle egenskaper som ikke er spesielt nevnt i registreringsinstruksen skal ikke registreres med mindre annet er spesielt angitt.</p>
-</div>
-<div class="paragraph">
-<p>Følgende egenskaper håndteres spesielt:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Egenskapen <em>Identifikasjon</em> skal ikke legges inn på objektene</p>
-</li>
-<li>
-<p>Egenskapen <em>Oppdateringsdato</em> skal ikke legges inn på objektene</p>
-</li>
-<li>
-<p>Alle objekter skal ha egenskapene <em>Nøyaktighet</em> og <em>NøyaktighetHøyde</em> som del av datatypen Posisjonskvalitet</p>
-</li>
-<li>
-<p>Alle objekter skal ha egenskapen <em>Registreringsversjon</em></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Unntak fra hovedreglene kan spesifiseres under den enkelte objekttype/egenskap i den enkelte registreringsinstruks eller i teknisk spesifikasjon for kartleggleggingsprosjektet.</p>
-</div>
-<div class="paragraph">
-<p><em>Assosiasjoner</em> håndteres ved fotogrammetrisk registrering av FKB-data på samme måte som opsjonelle egenskaper. Dvs. at det ikke skal etableres <em>assosiasjoner</em> i dataene dersom det ikke er spesielt beskrivet i den enkelte registreringsinstruks eller avtalt i kartleggingsprosjektet.</p>
-</div>
-<div class="sect4">
-<h5 id="_kvalitet_og_datafangstdato">Kvalitet og datafangstdato</h5>
-<div class="paragraph">
-<p>Alle objekter som registreres fotogrammetrisk skal merkes med <em>kvalitet</em> og <em>datafangstdato</em>.</p>
-</div>
-<div class="paragraph">
-<p>I følge definisjonen av <a href="http://sosi.geonorge.no/Standarder/FKB_generell_del/#truedatafangstdato">datafangstdato</a> skal dette være datoen for når flybildene som ligger til grunn for kartkonstruksjonen ble tatt (flyfotodato). I en del kartleggingsprosjekter kan imidlertid bildene være tatt på ulike datoer og det kan da være ønskelig at alle data i prosjektet likevel får samme dato. Dersom man ønsker å gjøre det på denne måten skal dette avklares i det enkelte prosjekt.</p>
-</div>
-<div class="paragraph">
-<p>I FKB 5.0 er kun målemetode satt som påkrevd egenskap i datatypen <a href="http://sosi.geonorge.no/Standarder/FKB_generell_del/#posisjonskvalitet">posisjonskvalitet</a>. Ved fotogrammetrisk regisrering skal imidlertid alltid også <em>nøyaktighet</em> og <em>synbarhet</em> registreres. Alle objekter som registreres fotogrammetrisk registreres med datafangstmetode <em>fot</em>.</p>
-</div>
-<div class="paragraph">
-<p>I SOSI-formatet skal ingen egenskaper kompaktifiseres i FKB 5.0. Dette gjelder også posisjonskvalitet (dvs. at datafangstmetode, nøyaktighet etc. angis som egenskaper på 3-prikksnivå under ..KVALITET).</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_obligatoriske_egenskaper_med_kodelister">Obligatoriske egenskaper med kodelister</h5>
-<div class="paragraph">
-<p>En del egenskaper med kodelister er angitt som påkrevde. Dette krever at det legges på en verdi ved fotogrammetrisk registrering. For slike egenskaper skal det være definert en "standardverdi" som benyttes i de tilfellene det ikke er angitt noe annet. Konkrete regler for hvordan dette skal registreres for de enkelte objekttyper/egenskaper skal være angitt i registreringsinstruksen. Egenskapene <em>Medium</em> og <em>Høydereferanse</em> (HREF) er benyttet på mange objekter i flere FKB-datasett og for disse gjelder følgende generelle regler dersom ikke annet er spesielt angitt:</p>
-</div>
-<table id="tab-medium" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 1. Registrering av verdier for egenskapen Medium der ikke annet er spesifisert</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Kodeverdi</th>
-<th class="tableblock halign-left valign-top">Forklaring</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T  (på terrenget)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Standardverdi. Benyttes for alle objekter der det ikke er grunn til å benytte en annen verdi</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">U (under terrenget)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Objekter under bakken er generelt lite aktuelt for fotogrammetrisk registrering, men det kan likevel være aktuelt å benytte denne verdien for objekter (delvis) under bruer/bygninger/kulverter etc. der det ikke er direkte innsyn med fotogrammetri, men krav til gjennomgående registrering av objektet.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">B (på bygning)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Benyttes for objekter på toppen av (på taket av) bygninger og ev. andre konstruksjoner.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">L (i lufta)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Benyttes for generelt for objekter befinner seg lufta. Dette kan være objekter i en stolpe eller på en bru. Bruk er presisert for en del objekttyper.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Enkelte objekttyper kan ha spesielle beskrivelser av bruk av andre koder for Medium. F.eks. er det presisert at en Veranda på et tak (takterrasse) registreres med Medium B, mens en Veranda som henger på en vegg (balkong) registreres med Medium L.</p>
-</div>
-<div class="paragraph">
-<p>Medium brukes i stor grad for å styre tegneregler for FKB-dataene. Altså slik at objekter med Medium U typisk ikke tegnes ut (ev. stiples), mens objekter med Medium L tegnes over/oppå andre objekter.</p>
-</div>
-<table id="tab-href" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 2. Registrering av verdier for egenskapen Høydereferanse der ikke annet er spesifisert</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Kodeverdi</th>
-<th class="tableblock halign-left valign-top">Forklaring</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">topp (toppen av objektet)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Standardverdi ved fotogrammetrisk registrering. For de fleste objekttyper er dette også presisert på objekttypen</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">fot (foten av objektet)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Benyttes ved fotogrammetrisk registrering kun for objekttyper der det er presisert at høydereferansen skal være foten av objektet eller terrenghøyde.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_egenskaper_på_flater_med_heleid_geometri">2.1.3. Egenskaper på flater med heleid geometri</h4>
-<div class="paragraph">
-<p>For objekttyper som er modellert med heleid flategeometri (finnes f.eks. i Arealbruk, BygnAnlegg og Naturinfo) må egenskaper knyttet til geometrien som datafangstdato og kvalitet representere hele flateobjektet. Man har ikke som tidligere muligheten av å splitte avgrensningen og sette ulik kvalitet/dato på ulike deler av avgrensningen.</p>
-</div>
-<div class="paragraph">
-<p>Dersom deler av (avgrensningen til) en flate har redusert kvalitet bør dette gjenspeiles på flatas kvalitetskoding. Ved ajourføring av en flate settes ny datafangstdato på flateobjektet.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_fotogrammetrisk_ajourhold">2.2. Fotogrammetrisk ajourhold</h3>
-<div class="paragraph">
-<p>Ved fotogrammetrisk ajourhold sender oppdragsgiver eksisterende data i henhold til FKB-produktspesifikasjon til oppdragstaker som grunnlag for ajourføring. FKB-dataene oppdateres der det har skjedd endringer slik at fullstendigheten i kartet skal bli tilsvarende som på fototidspunktet.</p>
-</div>
-<div class="paragraph">
-<p><strong>Merknad:</strong> Det forutsettes at eksisterende data oppfyller kravene til stedfestingsnøyaktighet gitt i produktspesifikasjonen. Dersom dette ikke er tilfelle kan det være vanskelig å gjøre en fornuftig ajourføring av dataene. Nykonstruksjon eller oppgradering bør da vurderes.</p>
-</div>
-<div class="paragraph">
-<p>Fotogrammetrisk ajourhold innebærer i prinsippet følgende operasjoner:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Registrere nye objekter der disse finnes i flybildene, men ikke i eksisterende data. Reglene som gjelder nye objekter ved <a href="#_fotogrammetrisk_nykonstruksjon">Fotogrammetrisk nykonstruksjon</a> skal da anvendes.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>I en del situasjoner må eksisterende objekter splittes eller sammenføyes i forbindelse med fotogrammetrisk registrering. De generelle reglene for <a href="https://sosi.geonorge.no/Standarder/FKB_generell_del/5.1#trueunik-identifikasjon-av-kartobjektene-i-fkb">id-håndtering i FKB</a> skal da legges til grunn.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Verifisere at objekter som er registrert i eksisterende data fortsatt er i tråd med datagrunnlaget/flybildene. For disse objektene skal egenskapen VERIFISERINGSDATO oppdateres, men forøvrig skal objektene ikke endres. Se <a href="https://sosi.geonorge.no/Standarder/FKB_generell_del/5.1#truebruk-av-datoegenskaper">beskrivelse av håndtering av datoegenskaper i FKB Generell del</a> for mer om dette.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Det presiseres at for objekter som verifiseres ved ajourføring skal <em>lokalid</em> beholdes uendret.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Slette (fjerne fra fila) objekter som finnes i eksisterende data, men som ikke finnes i flybildene.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Dersom man er i tvil om objektet fremdeles finnes i terrenget grunnet dårlig innsyn i flybildene så skal objektet beholdes. Det finnes særlige retningslinjer for slike vurderinger på en del objekttyper.</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Unntak fra/presisering av hovedreglene kan avtales i teknisk spesifikasjon for kartleggleggingsprosjektet.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_fotogrammetrisk_oppgradering">2.3. Fotogrammetrisk oppgradering</h3>
-<div class="paragraph">
-<p>Mens <em>ajourføring</em> dreier seg om å fange opp endringer i terrenget som ikke finnes i FKB-dataene dreier en <em>oppgradering</em> seg om en total gjennomgang av alle data innenfor kartleggingsområdet for å sikre at de er i tråd med spesifiserte krav. Eksempler på oppgradering kan være:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Omklassifisering av angitte objekttyper i tråd med nye regler/krav i FKB-produktspesifikasjon</p>
-</li>
-<li>
-<p>Oppgradering av angitte objekttypers geometrirepresentasjon (f.eks. hvis det bestemmes at en objekttype skal endres fra HREF fot til HREF topp)</p>
-</li>
-<li>
-<p>Påføring av egenskaper på alle objekter av en objekttype</p>
-</li>
-<li>
-<p>Påføring av høydeverdier på alle objekter av en objekttype</p>
-</li>
-<li>
-<p>Tilpasning av angitte objekttyper for å skape konsistens mellom datasett (f.eks. en omkoding av eksisterende data i FKB-Veg for å skape konsistens med vegnettet)</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Reglene for oppgradering er ikke beskrevet i fotogrammetrisk registreringsinstruks og må avtales spesielt i det enkelte kartlegginsprosjekt der dette er aktuelt. Se <a href="https://sosi.geonorge.no/Standarder/FKB_generell_del/5.1#trueoppgradering">FKB generell del</a> for en generell beskrivelse av oppgradering av FKB-data.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_geografisk_avgrensning_av_kartleggingsområder">2.4. Geografisk avgrensning av kartleggingsområder</h3>
-<div class="paragraph">
-<p>Ved fotogrammetrisk datafangst angis <em>prosjektområdet</em> datafangsten skal skje innenfor ved hjelp av et definert <em>avgrensningspolygon</em>.
-Følgende håndtering gjelder dersom ikke annet er angitt:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Avgrensningspolygonet utformes av oppdragsgiver på en slik måte at bygninger (og sekundært andre typer flate-objekter) i minst mulig grad deles.</p>
-</li>
-<li>
-<p>Avgrensningspolygonet leveres tilbake fra oppdragstaker sammen med dataene.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Nærmere retningslinjer for ev. justeringer i avgrensningspolygonet fra oppdragstaker avtales i det enkelte prosjekt.
-I så fall skal justert avgrensning leveres tilbake sammen med dataene. Justering kan for eksempel være aktuelt dersom
-man ønsker å konstruere objekter innenfor hele flyfotodekningen eller man ønsker å få registrert alle
-bygninger som deles av avgrensningspolygonet</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Nye flate-objekter skal deles av avgrensningspolygonet</p>
-<div class="ulist">
-<ul>
-<li>
-<p>For flater med delt geometri benyttes en fiktiv avgrensningsobjekttype langs avgrensningspolygonet som det i følge datamodellen er lovlig at kan avgrense flata.</p>
-</li>
-<li>
-<p>For flater med heleid geometri angis det ikke på noen spesielle måte at flata er avgrenset av avgrensningspolygonet, men avgrensninga til flata skal være helt sammenfallende med geometrien til avgrensningspolygonet</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Flate-objekter som verifiseres i forbindelse med ajourføring skal ikke splittes.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Dersom det ikke kan verifiseres fotogrammetrisk at hele objektet fortsatt finnes så skal objektet ikke endres (merkes med VERIFISERINGSDATO) selv om store deler av objektet er innenfor prosjektområdet.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Nye kurve-objekter skal konnekteres til avgrensningspolygonet</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Eksisterende data utenfor prosjektområdet som naturlig skal knyttes sammen med nye kurve-objekter splittes og knyttes til nye objekter i siste punkt som ligger innenfor avgrensningspolygonet</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Kurve-objekter som skal verifiseres i forbindelse med ajourføring splittes i siste punkt som ligger innenfor prosjektområdet. VERIFISERINGSDATO påføres kun på den delen som i sin helhet ligger innenfor prosjektområdet. Dersom objektet krysser prosjektavgrensningen gjentatte ganger kan hele objektet verifiseres uten splitting, forutsatt stereodekning</p>
-</li>
-</ul>
+<p>Se <a href="http://sosi.geonorge.no/Standarder/FKB_generell_del/#_generelle_retningslinjer_for_fotogrammetrisk_registrering_av_fkb_normativt">Vedlegg D i FKB Generell del</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -912,7 +623,7 @@ bygninger som deles av avgrensningspolygonet</p>
 <p>Mange objekttyper har også egenskapen treDNivå som en påkrevd egenskap. Se <a href="https://register.geonorge.no/sosi-kodelister/fkb/bygning/5.0/trednivå">kodeliste på Geonorge kodelisteregister</a> for en full beskrivelse av kodelista og kodeverdiene for treDNivå. Ved fotogrammetrisk registrering skal en av 2 verdier angis:</p>
 </div>
 <table id="tab-treD" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 3. TreDNivå ved fotogrammetrisk registrering</caption>
+<caption class="title">Tabell 1. TreDNivå ved fotogrammetrisk registrering</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -976,6 +687,22 @@ AnnenBygning registreres med delt flategeometri.</p>
 </colgroup>
 <tbody>
 <tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-C</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Se avgrensningsobjekttyper</p></td>
 </tr>
@@ -998,22 +725,6 @@ AnnenBygning registreres med delt flategeometri.</p>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D minstestørrelse</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Areal &gt; 3m2 og høyde &gt; 2m</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-C</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
 </tbody>
 </table>
@@ -1156,14 +867,6 @@ AnnenBygning registreres med delt flategeometri.</p>
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se avgrensningsobjekttyper</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se avgrensningsobjekttyper</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -1178,6 +881,14 @@ AnnenBygning registreres med delt flategeometri.</p>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se avgrensningsobjekttyper</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se avgrensningsobjekttyper</p></td>
 </tr>
 </tbody>
 </table>
@@ -1368,44 +1079,44 @@ Merknad: Dersom deler av takkanten ikke er synlig kodes den synlige delen som ta
 <hr>
 <div class="imageblock">
 <div class="content">
+<a class="image" href="figurer/Oval_Bygning1.png"><img src="figurer/Oval_Bygning1.png" alt="Oval Bygning1"></a>
+</div>
+<div class="title">Figur 5. Illustrasjon på registrering av konstruksjon med oval bygningsform. Rød strek er objekttype Takkant, og blå er objekttype Hjelpelinje3d</div>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
 <a class="image" href="figurer/takkant_nodepunkt.png"><img src="figurer/takkant_nodepunkt.png" alt="takkant nodepunkt"></a>
 </div>
-<div class="title">Figur 5. Eksempel på registrering av takkant (takkant i rødt og taksprang i blått).</div>
+<div class="title">Figur 6. Eksempel på registrering av takkant (takkant i rødt og taksprang i blått).</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="figurer/takkant_overlapp.png"><img src="figurer/takkant_overlapp.png" alt="takkant overlapp"></a>
 </div>
-<div class="title">Figur 6. Eksempel på lovlige overlappende takkanter og bygningsflater. Takkant på hovedhus går over takkant på garasje.</div>
+<div class="title">Figur 7. Eksempel på lovlige overlappende takkanter og bygningsflater. Takkant på hovedhus går over takkant på garasje.</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="figurer/takkant_sammenhengende.png"><img src="figurer/takkant_sammenhengende.png" alt="takkant sammenhengende"></a>
 </div>
-<div class="title">Figur 7. Delen av bygningsavgrensningen markert med piler er et takoverbygg (uten vegger). Siden takoverbygget inngår i en bygning registrert i matrikkelen, avgrenses dette med Takkant i likhet med resten av bygningsavgrensningen</div>
+<div class="title">Figur 8. Delen av bygningsavgrensningen markert med piler er et takoverbygg (uten vegger). Siden takoverbygget inngår i en bygning registrert i matrikkelen, avgrenses dette med Takkant i likhet med resten av bygningsavgrensningen</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="figurer/takkant_takflate.png"><img src="figurer/takkant_takflate.png" alt="takkant takflate"></a>
 </div>
-<div class="title">Figur 8. Eksempler på registrering av takkant der det er en opphøyet kant ved takflaten. I disse tilfellene skal høyden på takkanten registreres på takplanet og ikke på de oppstikkende objektene. Takkant er tegnet med rød strek.</div>
+<div class="title">Figur 9. Eksempler på registrering av takkant der det er en opphøyet kant ved takflaten. I disse tilfellene skal høyden på takkanten registreres på takplanet og ikke på de oppstikkende objektene. Takkant er tegnet med rød strek.</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="figurer/takkant_taksprang_nodepunkt.png"><img src="figurer/takkant_taksprang_nodepunkt.png" alt="takkant taksprang nodepunkt"></a>
 </div>
-<div class="title">Figur 9. Eksempel på registrering av takkant for bygning med flatt tak (Takkant er tegnet i rødt, Taksprang er tegnet i blått). Det skal lages 2D nodepunkt i takkant som går over taksprang.</div>
-</div>
-<hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="figurer/Oval_Bygning1.png"><img src="figurer/Oval_Bygning1.png" alt="Oval Bygning1"></a>
-</div>
-<div class="title">Figur 10. Illustrasjon på registrering av konstruksjon med oval bygningsform. Rød strek er objekttype Takkant, og blå er objekttype Hjelpelinje3d</div>
+<div class="title">Figur 10. Eksempel på registrering av takkant for bygning med flatt tak (Takkant er tegnet i rødt, Taksprang er tegnet i blått). Det skal lages 2D nodepunkt i takkant som går over taksprang.</div>
 </div>
 <h4 id="_føringer_3" class="discrete">Føringer</h4>
 <table class="tableblock frame-all grid-all stretch">
@@ -1414,14 +1125,6 @@ Merknad: Dersom deler av takkanten ikke er synlig kodes den synlige delen som ta
 <col style="width: 66.6667%;">
 </colgroup>
 <tbody>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterst på tak/takrenne/vindskie</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Takplanet</p></td>
-</tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
@@ -1437,6 +1140,14 @@ Merknad: Dersom deler av takkanten ikke er synlig kodes den synlige delen som ta
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterst på tak/takrenne/vindskie</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Takplanet</p></td>
 </tr>
 </tbody>
 </table>
@@ -1621,14 +1332,6 @@ bygningsavgrensning til AnnenBygning/Bygning. Egenskapen SKAL_AVGRENSE_BYGNING s
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Grunnrissreferanse er hovedfasade/hovedbygg</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Høydereferanse er fot eller topp fasadeliv. HREF benyttes for å angi   høydereferanse.</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Opsjonell registrering</p></td>
 </tr>
@@ -1643,6 +1346,14 @@ bygningsavgrensning til AnnenBygning/Bygning. Egenskapen SKAL_AVGRENSE_BYGNING s
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Opsjonell registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grunnrissreferanse er hovedfasade/hovedbygg</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Høydereferanse er fot eller topp fasadeliv. HREF benyttes for å angi   høydereferanse.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1804,7 +1515,7 @@ Merknad: Benyttes hovedsaklig for bygning under oppf&#248;ring. For bygninger so
 </div>
 <h4 id="_tilleggsinformasjon_for_fotogrammetrisk_registrering_5" class="discrete">Tilleggsinformasjon for fotogrammetrisk registrering</h4>
 <div class="paragraph">
-<p>Grunnmur skal kun brukes for bygning under oppf&#248;ring. Revede bygg/ruiner skal ikke registreres som grunnmur men kan registreres som Ruin i FKB-BygnAnlegg (opsjonell registrering).</p>
+<p>Grunnmur skal kun brukes for bygning under oppf&#248;ring. Revede bygg/ruiner skal ikke registreres som grunnmur, men kan registreres som Ruin i FKB-BygnAnlegg.</p>
 </div>
 <div class="paragraph">
 <p>Grunnmur kan sammen med Bygningsdelelinje og FiktivBygningsavgrensning danne bygningsavgrensning til AnnenBygning/Bygning. Dersom Takkant finnes, skal denne benyttes til &#229; danne bygningsavgrensning.</p>
@@ -1827,14 +1538,6 @@ Merknad: Benyttes hovedsaklig for bygning under oppf&#248;ring. For bygninger so
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant av grunnmur</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Topp grunnmur (angis med HREF = topp)</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -1849,6 +1552,14 @@ Merknad: Benyttes hovedsaklig for bygning under oppf&#248;ring. For bygninger so
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant av grunnmur</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topp grunnmur (angis med HREF = topp)</p></td>
 </tr>
 </tbody>
 </table>
@@ -2041,14 +1752,6 @@ Merknad: Benyttes hovedsaklig for bygning under oppf&#248;ring. For bygninger so
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Grunnrissreferanse er linjene den støter til (takkant, eller ev. grunnmur eller fasadeliv).</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Høyden skal følge hovedtakplanet</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -2063,6 +1766,14 @@ Merknad: Benyttes hovedsaklig for bygning under oppf&#248;ring. For bygninger so
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grunnrissreferanse er linjene den støter til (takkant, eller ev. grunnmur eller fasadeliv).</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Høyden skal følge hovedtakplanet</p></td>
 </tr>
 </tbody>
 </table>
@@ -2198,14 +1909,6 @@ Merknad: Brukes når deler av takkant, fasadeliv, grunnmur eller bygningsdelelin
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tilsvarende som objekttypen den er ment å erstatte</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tilsvarende som objekttypen den er ment å erstatte</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -2220,6 +1923,14 @@ Merknad: Brukes når deler av takkant, fasadeliv, grunnmur eller bygningsdelelin
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tilsvarende som objekttypen den er ment å erstatte</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tilsvarende som objekttypen den er ment å erstatte</p></td>
 </tr>
 </tbody>
 </table>
@@ -2383,14 +2094,6 @@ Merknad: Brukes når deler av takkant, fasadeliv, grunnmur eller bygningsdelelin
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant arkade</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tak eller gulv i arkade (bruk HREF). Primært registreres topp</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Opsjonell registrering</p></td>
 </tr>
@@ -2405,6 +2108,14 @@ Merknad: Brukes når deler av takkant, fasadeliv, grunnmur eller bygningsdelelin
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant arkade</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tak eller gulv i arkade (bruk HREF). Primært registreres topp</p></td>
 </tr>
 </tbody>
 </table>
@@ -2604,6 +2315,22 @@ Eksempel: Valming på tak</p>
 </colgroup>
 <tbody>
 <tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-C</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Topp/bunn/ytterkant av knekklinjer (knekkpunkter) i taket</p></td>
 </tr>
@@ -2626,22 +2353,6 @@ Eksempel: Valming på tak</p>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D minstestørrelse</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bygningslinje (TRE_D_NIVÅ 2) skal benyttes for å registrere hovedformen på takflater, for eksempel   der mønelinja ikke når ut til takkant (valmet tak). Det registreres ikke oppstikkende objekter   (TRE_D_NIVÅ 3)</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-C</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
 </tbody>
 </table>
@@ -2823,6 +2534,22 @@ Eksempel: Valming på tak</p>
 </colgroup>
 <tbody>
 <tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-C</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">knekklinje i takoverflaten</p></td>
 </tr>
@@ -2845,22 +2572,6 @@ Eksempel: Valming på tak</p>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D minstestørrelse</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">krav til maksimal pilhøyde 100 cm</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-C</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
 </tbody>
 </table>
@@ -3034,14 +2745,6 @@ Eksempel: Valming på tak</p>
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Topp møne ved skrå takflater</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Topp møne ved skrå takflater</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -3056,6 +2759,14 @@ Eksempel: Valming på tak</p>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topp møne ved skrå takflater</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topp møne ved skrå takflater</p></td>
 </tr>
 </tbody>
 </table>
@@ -3216,14 +2927,6 @@ Eksempel: Valming på tak</p>
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant portrom</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tak eller gulv i portrom (bruk HREF). Primært registreres topp.</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Opsjonell registrering</p></td>
 </tr>
@@ -3238,6 +2941,14 @@ Eksempel: Valming på tak</p>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant portrom</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tak eller gulv i portrom (bruk HREF). Primært registreres topp.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3398,18 +3109,6 @@ Merknad: Eksempel på kanter der TakMur skal benyttes er gavlvegger og brannvegg
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Senter TakMur</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Topp TakMur</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TakMur med høyde større en 0.5 meter registreres</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Opsjonell registrering</p></td>
 </tr>
@@ -3424,6 +3123,18 @@ Merknad: Eksempel på kanter der TakMur skal benyttes er gavlvegger og brannvegg
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Senter TakMur</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topp TakMur</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TakMur med høyde større en 0.5 meter registreres</p></td>
 </tr>
 </tbody>
 </table>
@@ -3602,22 +3313,6 @@ Eksempel: Arker som går inn i hovedtaket og "terrasse" inne i en bygård.</p>
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Omriss i gulvnivå (som ved takterrasse innfelt i hovedtakflate)</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Høydereferanse er laveste flate. I bygård med lavereliggende tak vil   man registrere på nivå med lavere tak inne i bygård.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Takplatå tas med hvis volum er større enn 5 m3</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B minstestørrelse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Takplatå tas med hvis volum er større enn 15 m3</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -3632,6 +3327,22 @@ Eksempel: Arker som går inn i hovedtaket og "terrasse" inne i en bygård.</p>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Omriss i gulvnivå (som ved takterrasse innfelt i hovedtakflate)</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Høydereferanse er laveste flate. I bygård med lavereliggende tak vil   man registrere på nivå med lavere tak inne i bygård.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Takplatå tas med hvis volum er større enn 5 m3</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B minstestørrelse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Takplatå tas med hvis volum er større enn 15 m3</p></td>
 </tr>
 </tbody>
 </table>
@@ -3800,14 +3511,6 @@ MERKNAD: Objekttypen skal benyttes som en utfyllende linje for &#229; beskrive b
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Topp takrenne eller topp ytterkant tak. Dersom det er registrert en   opphøyet kant på taket (TakMur), skal fremdeles takhøyden   registreres.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterst på tak/takrenne/vindskie</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Opsjonell registrering</p></td>
 </tr>
@@ -3822,6 +3525,14 @@ MERKNAD: Objekttypen skal benyttes som en utfyllende linje for &#229; beskrive b
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topp takrenne eller topp ytterkant tak. Dersom det er registrert en   opphøyet kant på taket (TakMur), skal fremdeles takhøyden   registreres.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterst på tak/takrenne/vindskie</p></td>
 </tr>
 </tbody>
 </table>
@@ -3996,14 +3707,6 @@ Merknad: ikke ytterkant som registreres som takkant</p>
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterst på tak/takrenne/vindskie. For flate tak registreres ytterkant   vegg.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Takplan</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -4018,6 +3721,14 @@ Merknad: ikke ytterkant som registreres som takkant</p>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterst på tak/takrenne/vindskie. For flate tak registreres ytterkant   vegg.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Takplan</p></td>
 </tr>
 </tbody>
 </table>
@@ -4192,14 +3903,6 @@ Merknad: Ikke ytterkant som er takkant</p>
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Der øvre takkant blir projisert ned på nedre tak</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">På nedre takplan</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -4214,6 +3917,14 @@ Merknad: Ikke ytterkant som er takkant</p>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Der øvre takkant blir projisert ned på nedre tak</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">På nedre takplan</p></td>
 </tr>
 </tbody>
 </table>
@@ -4406,14 +4117,6 @@ Merknad:  Brukes på bygninger som ikke er driftsbygninger i landbruket. I det s
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant av bru. Registreres som sammenhengende polygon</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gulv</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -4428,6 +4131,14 @@ Merknad:  Brukes på bygninger som ikke er driftsbygninger i landbruket. I det s
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant av bru. Registreres som sammenhengende polygon</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gulv</p></td>
 </tr>
 </tbody>
 </table>
@@ -4590,14 +4301,6 @@ Merknad: Kjørerampe i tilknytning til et industri og lagerbygg beskrives som An
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant av låvebru</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Topp låvebrukjørebane, eventuelt bakken ved start låvebru</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -4612,6 +4315,14 @@ Merknad: Kjørerampe i tilknytning til et industri og lagerbygg beskrives som An
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant av låvebru</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topp låvebrukjørebane, eventuelt bakken ved start låvebru</p></td>
 </tr>
 </tbody>
 </table>
@@ -4783,22 +4494,6 @@ Merknad: Kjørerampe i tilknytning til et industri og lagerbygg beskrives som An
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant av trapp</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Topp og fot av trappa (trappas skråplan)</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle synlige trapper</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B minstestørrelse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Areal &gt; 6m2 (regnet fra takkant)</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -4813,6 +4508,22 @@ Merknad: Kjørerampe i tilknytning til et industri og lagerbygg beskrives som An
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant av trapp</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topp og fot av trappa (trappas skråplan)</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alle synlige trapper</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B minstestørrelse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Areal &gt; 6m2 (regnet fra takkant)</p></td>
 </tr>
 </tbody>
 </table>
@@ -4972,40 +4683,50 @@ Merknad: Garasje med veranda på taket er enten en del av bygningsenheten den li
 <div class="paragraph">
 <p>Som standard skal h&#248;ydereferanse (HREF) benyttes slik: HREF topp (topp rekkverk) benyttes p&#229; takterrasse, HREF fot (gulvniv&#229;) benyttes p&#229; terrasser p&#229; terreng og det er valgfritt om ..HREF topp eller fot benyttes for veranda p&#229; vegg.</p>
 </div>
+<div class="paragraph">
+<p>Verandaer som ikke stikker ut fra veggen/takkanten, men er trukket inn i bygget forventes ikke registrert.</p>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="figurer/inntrukne_verandaer.png"><img src="figurer/inntrukne_verandaer.png" alt="inntrukne verandaer"></a>
+</div>
+<div class="title">Figur 52. Illustrasjon av bygning der verandaene i øverste etasje ikke stikker ut fra takkant/vegg. Verandaene i de tre nederste etasjene stikker ut fra bygget og skal registreres (rød linje)</div>
+</div>
 <hr>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="figurer/veranda_blokk.png"><img src="figurer/veranda_blokk.png" alt="veranda blokk"></a>
 </div>
-<div class="title">Figur 52. Registrering av veranda (rød linje) i blokk. Alle verandaene skal registreres. I bildet til høyre skal det også registreres takoverbygg på toppen (blå linje).</div>
+<div class="title">Figur 53. Registrering av veranda (rød linje) i blokk. Alle verandaene skal registreres. I bildet til høyre skal det også registreres takoverbygg på toppen (blå linje).</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="figurer/veranda_eksempel.png"><img src="figurer/veranda_eksempel.png" alt="veranda eksempel"></a>
 </div>
-<div class="title">Figur 53. Eksempel på registrering av Veranda med forskjellige høydereferanser (ikke alle Verandaer på bildet er illustrert med en egen strek)</div>
+<div class="title">Figur 54. Eksempel på registrering av Veranda med forskjellige høydereferanser (ikke alle Verandaer på bildet er illustrert med en egen strek)</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="figurer/veranda_hoydesprang.png"><img src="figurer/veranda_hoydesprang.png" alt="veranda hoydesprang"></a>
 </div>
-<div class="title">Figur 54. Figur som viser prinsippene for registrering av verandaer med høydesprang. Dersom høydesprangene er over 50cm skal det registreres høydesprang som på bildet nederst.</div>
+<div class="title">Figur 55. Figur som viser prinsippene for registrering av verandaer med høydesprang. Dersom høydesprangene er over 50cm skal det registreres høydesprang som på bildet nederst.</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="figurer/veranda_skisse.png"><img src="figurer/veranda_skisse.png" alt="veranda skisse"></a>
 </div>
-<div class="title">Figur 55. Skisse som viser registrering av Veranda med forskjellig verdier av MEDIUM og HREF</div>
+<div class="title">Figur 56. Skisse som viser registrering av Veranda med forskjellig verdier av MEDIUM og HREF</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="figurer/veranda_takoverbygg.png"><img src="figurer/veranda_takoverbygg.png" alt="veranda takoverbygg"></a>
 </div>
-<div class="title">Figur 56. Veranda skal registreres også under Takoverbygg på verandaen</div>
+<div class="title">Figur 57. Veranda skal registreres også under Takoverbygg på verandaen</div>
 </div>
 <h4 id="_føringer_21" class="discrete">Føringer</h4>
 <table class="tableblock frame-all grid-all stretch">
@@ -5014,22 +4735,6 @@ Merknad: Garasje med veranda på taket er enten en del av bygningsenheten den li
 <col style="width: 66.6667%;">
 </colgroup>
 <tbody>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant veranda</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Det skal angis hvilken høydereferanse (HREF) som er benyttet ved   registrering. For verandaer på tak (MEDIUM B) skal   høydereferansen være topp.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Veranda med areal større enn 2 m2 (regnet fra takkant)</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B minstestørrelse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Veranda med areal større enn 6 m2 (regnet fra takkant)</p></td>
-</tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
@@ -5045,6 +4750,22 @@ Merknad: Garasje med veranda på taket er enten en del av bygningsenheten den li
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant veranda</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det skal angis hvilken høydereferanse (HREF) som er benyttet ved   registrering. For verandaer på tak (MEDIUM B) skal   høydereferansen være topp.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Veranda med areal større enn 2 m2 (regnet fra takkant)</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B minstestørrelse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Veranda med areal større enn 6 m2 (regnet fra takkant)</p></td>
 </tr>
 </tbody>
 </table>
@@ -5194,11 +4915,14 @@ Merknad: Garasje med veranda på taket er enten en del av bygningsenheten den li
 <div class="content">
 <a class="image" href="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_veggfrittstaende.png"><img src="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_veggfrittstaende.png" alt="objtype veggfrittstaende"></a>
 </div>
-<div class="title">Figur 57. Illustrasjon fra produktspesifikasjon av VeggFrittstående</div>
+<div class="title">Figur 58. Illustrasjon fra produktspesifikasjon av VeggFrittstående</div>
 </div>
 <h4 id="_tilleggsinformasjon_for_fotogrammetrisk_registrering_21" class="discrete">Tilleggsinformasjon for fotogrammetrisk registrering</h4>
 <div class="paragraph">
 <p>Ved registrering av topp vegg skal alle knekklinjer registreres. Dersom det er h&#248;ydesprang st&#248;rre enn 0,5 meter, skal disse registreres som sprang.</p>
+</div>
+<div class="paragraph">
+<p>VeggFrittst&#229;ende skal kun benyttes n&#229;r veggen st&#229;r inntil takkant og/eller veranda. Vegger som ikke st&#229;r i tilknytning til bygning/veranda registreres som aktuelt objekt i FKB-BygnAnlegg.</p>
 </div>
 <div class="paragraph">
 <p>Det skal lages nodepunkt til eventuelle tilst&#248;tende situasjonsdetaljer. Avhengig av situasjon dannes nodepunktet i 2D eller 3D. Konnekteres til bygninger og lignende der veggen g&#229;r inn til slike.</p>
@@ -5208,7 +4932,7 @@ Merknad: Garasje med veranda på taket er enten en del av bygningsenheten den li
 <div class="content">
 <a class="image" href="figurer/veggfrittstaende_skisse.png"><img src="figurer/veggfrittstaende_skisse.png" alt="veggfrittstaende skisse"></a>
 </div>
-<div class="title">Figur 58. Viser prinsippene for registrering av skillevegger i forbindelse med rekkehus</div>
+<div class="title">Figur 59. Viser prinsippene for registrering av skillevegger i forbindelse med rekkehus</div>
 </div>
 <h4 id="_føringer_22" class="discrete">Føringer</h4>
 <table class="tableblock frame-all grid-all stretch">
@@ -5217,22 +4941,6 @@ Merknad: Garasje med veranda på taket er enten en del av bygningsenheten den li
 <col style="width: 66.6667%;">
 </colgroup>
 <tbody>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Senter vegg</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Topp vegg</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Høyere enn 1.5 meter og lengre enn 1 meter</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B minstestørrelse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Høyere enn 1.5 meter og lengre enn 2 meter</p></td>
-</tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
@@ -5248,6 +4956,22 @@ Merknad: Garasje med veranda på taket er enten en del av bygningsenheten den li
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Senter vegg</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topp vegg</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Høyere enn 1.5 meter og lengre enn 1 meter</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B minstestørrelse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Høyere enn 1.5 meter og lengre enn 2 meter</p></td>
 </tr>
 </tbody>
 </table>
@@ -5401,7 +5125,7 @@ Eksempel:  'carport' eller tak over bensinpumper</p>
 <div class="content">
 <a class="image" href="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_takoverbygg.png"><img src="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_takoverbygg.png" alt="objtype takoverbygg"></a>
 </div>
-<div class="title">Figur 59. Illustrasjon fra produktspesifikasjon av Takoverbygg</div>
+<div class="title">Figur 60. Illustrasjon fra produktspesifikasjon av Takoverbygg</div>
 </div>
 <h4 id="_tilleggsinformasjon_for_fotogrammetrisk_registrering_22" class="discrete">Tilleggsinformasjon for fotogrammetrisk registrering</h4>
 <div class="paragraph">
@@ -5424,14 +5148,14 @@ Eksempel:  'carport' eller tak over bensinpumper</p>
 <div class="content">
 <a class="image" href="figurer/takoverbygg_eksempel.png"><img src="figurer/takoverbygg_eksempel.png" alt="takoverbygg eksempel"></a>
 </div>
-<div class="title">Figur 60. Eksempel på registrering av takoverbygg</div>
+<div class="title">Figur 61. Eksempel på registrering av takoverbygg</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="figurer/takoverbygg_skisser.png"><img src="figurer/takoverbygg_skisser.png" alt="takoverbygg skisser"></a>
 </div>
-<div class="title">Figur 61. Skisser for registrering av ulike typer takoverbygg</div>
+<div class="title">Figur 62. Skisser for registrering av ulike typer takoverbygg</div>
 </div>
 <h4 id="_føringer_23" class="discrete">Føringer</h4>
 <table class="tableblock frame-all grid-all stretch">
@@ -5440,22 +5164,6 @@ Eksempel:  'carport' eller tak over bensinpumper</p>
 <col style="width: 66.6667%;">
 </colgroup>
 <tbody>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se avgrensningsobjekttyper</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se avgrensningsobjekttyper</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Takoverbygg med areal større enn 3 m2</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B minstestørrelse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Takoverbygg med areal større enn 6 m2</p></td>
-</tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
@@ -5471,6 +5179,22 @@ Eksempel:  'carport' eller tak over bensinpumper</p>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se avgrensningsobjekttyper</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se avgrensningsobjekttyper</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A minstestørrelse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Takoverbygg med areal større enn 3 m2</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB-B minstestørrelse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Takoverbygg med areal større enn 6 m2</p></td>
 </tr>
 </tbody>
 </table>
@@ -5570,7 +5294,7 @@ Eksempel:  'carport' eller tak over bensinpumper</p>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="takoverbyggkant">3.24. Objekttype: Takoverbyggkant</h3>
+<h3 id="takoverbyggkant">3.24. Objekttype: TakoverbyggKant</h3>
 <div class="paragraph">
 <p><strong>Definisjon fra FKB produktspesifikasjon</strong>: avgrensing av takoverbygg</p>
 </div>
@@ -5578,7 +5302,7 @@ Eksempel:  'carport' eller tak over bensinpumper</p>
 <div class="content">
 <a class="image" href="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_takoverbyggkant.png"><img src="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/5.0/figurer/objtype_takoverbyggkant.png" alt="objtype takoverbyggkant"></a>
 </div>
-<div class="title">Figur 62. Illustrasjon fra produktspesifikasjon av Takoverbyggkant</div>
+<div class="title">Figur 63. Illustrasjon fra produktspesifikasjon av TakoverbyggKant</div>
 </div>
 <h4 id="_tilleggsinformasjon_for_fotogrammetrisk_registrering_23" class="discrete">Tilleggsinformasjon for fotogrammetrisk registrering</h4>
 <div class="paragraph">
@@ -5599,14 +5323,6 @@ hele bygningsavgrensningen.</p>
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant tak</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Topp ytterkant tak</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Påkrevd registrering</p></td>
 </tr>
@@ -5622,10 +5338,18 @@ hele bygningsavgrensningen.</p>
 <th class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registreres ikke</p></td>
 </tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB grunnrissreferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ytterkant tak</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">FKB høydereferanse</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topp ytterkant tak</p></td>
+</tr>
 </tbody>
 </table>
 <div style="page-break-after: always;"></div>
-<h4 id="_egenskapstabell_for_objekttype_takoverbyggkant" class="discrete">Egenskapstabell for objekttype: Takoverbyggkant</h4>
+<h4 id="_egenskapstabell_for_objekttype_takoverbyggkant" class="discrete">Egenskapstabell for objekttype: TakoverbyggKant</h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 28.5714%;">
@@ -5762,7 +5486,7 @@ hele bygningsavgrensningen.</p>
 <div class="sect2">
 <h3 id="_kvalitetskrav">4.1. Kvalitetskrav</h3>
 <table id="tab-Logisk-konsistens" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 4. Krav til logisk konsistens</caption>
+<caption class="title">Tabell 2. Krav til logisk konsistens</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -5800,7 +5524,7 @@ hele bygningsavgrensningen.</p>
 <p>Logisk konsistens kontrolleres vha. SOSI-kontroll eller kontroll mot GML-skjema. Gjelder alle kvalitetsklasser.</p>
 </div>
 <table id="tab-Egenskapskonsistens" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 5. Krav til egenskapskonsistens</caption>
+<caption class="title">Tabell 3. Krav til egenskapskonsistens</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -5828,7 +5552,7 @@ hele bygningsavgrensningen.</p>
 <p>Gjelder alle kvalitetsklasser.</p>
 </div>
 <table id="tab-Fullstendighet" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 6. Krav til fullstendighet</caption>
+<caption class="title">Tabell 4. Krav til fullstendighet</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -5880,7 +5604,7 @@ hele bygningsavgrensningen.</p>
 <p>Krav til fullstendighet og egenskapskonsistens kontrolleres mot flybilder (ortofoto) som ble brukt under kartkonstruksjon.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 7. Oversikt over krav til stedfestingsnøyaktighet (systematisk avvik / standardavvik ) for ulike nøyaktighetsklasser i de ulike FKB-standardene</caption>
+<caption class="title">Tabell 5. Oversikt over krav til stedfestingsnøyaktighet (systematisk avvik / standardavvik ) for ulike nøyaktighetsklasser i de ulike FKB-standardene</caption>
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 16.6666%;">
@@ -5967,7 +5691,7 @@ hele bygningsavgrensningen.</p>
 <p>Ved angivelse av krav til stedfestingsnøyaktighet og fullstendighet er objekttypene inndelt i forskjellige klasser. Nedenfor følger en oversikt over hvilken klasse objekttypene i FKB-Bygning tilhører.</p>
 </div>
 <table id="tab-Kvalitetsklasser" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 8. Kvalitetsklasser for objekttypene i FKB-Bygning</caption>
+<caption class="title">Tabell 6. Kvalitetsklasser for objekttypene i FKB-Bygning</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -6144,7 +5868,7 @@ hele bygningsavgrensningen.</p>
 <div class="content">
 <img src="figurer/FKB-standard.png" alt="FKB standard">
 </div>
-<div class="title">Figur 63. Detaljering av bygninger i de ulike FKB-standardene</div>
+<div class="title">Figur 64. Detaljering av bygninger i de ulike FKB-standardene</div>
 </div>
 <div class="paragraph">
 <p>Se <a href="https://sosi.geonorge.no/Standarder/FKB_generell_del/5.1">FKB generell del</a> for en grundigere beskrivelse av de ulike FKB-standardene. For FKB-Bygning er FKB-D-standard lik FKB-C-standard. Datagrunnlaget for registrering er likt i C og D og objektene skal registreres på samme måte. Forskjellen ligger i at det i FKB-D-områder finnes færre bygninger.</p>
@@ -6175,13 +5899,13 @@ koordinater i 2 dimensjoner (xy) eller i 3 dimensjoner (xyz) i nodepunktet (2D-n
 <div class="content">
 <img src="figurer/3D_nodepunkt.png" alt="3D nodepunkt">
 </div>
-<div class="title">Figur 64. Eksempel på 3D-nodepunkt for en bygning. Disse er markert med en rosa ring. Røde linjer er takkant, mørkeblå linjer er taksprang, brune linjer er bygningslinjer og mørkegrønn linje er mønelinje.</div>
+<div class="title">Figur 65. Eksempel på 3D-nodepunkt for en bygning. Disse er markert med en rosa ring. Røde linjer er takkant, mørkeblå linjer er taksprang, brune linjer er bygningslinjer og mørkegrønn linje er mønelinje.</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="figurer/2D_nodepunkt.png" alt="2D nodepunkt">
 </div>
-<div class="title">Figur 65. Eksempel på 2D-nodepunkt for en bygning. Disse er markert med en rosa ring.</div>
+<div class="title">Figur 66. Eksempel på 2D-nodepunkt for en bygning. Disse er markert med en rosa ring.</div>
 </div>
 <div class="paragraph">
 <p><strong>Konnekteringspunkt:</strong></p>
@@ -6236,7 +5960,7 @@ med egne UML-datamodeller for registreringsinstruksene. I korte trekk går dette
 </ul>
 </div>
 <table id="tab-foringer" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 9. Føringer for registrering som er angitt i registreringsinstruksene</caption>
+<caption class="title">Tabell 7. Føringer for registrering som er angitt i registreringsinstruksene</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -6371,7 +6095,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-12-20 14:47:06 +0100
+Last updated 2025-12-01 15:01:46 +0100
 </div>
 </div>
 </body>
